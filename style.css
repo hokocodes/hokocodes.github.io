@@ -1,9 +1,9 @@
 body { 
     margin: 0 auto; 
-    font-family: 'Courier New', Courier, monospace;
-    color: greenyellow;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0F0;
     background-color: black;
-    margin-top: 300px;
+    margin-top: 40px;
 }
 
 p {
@@ -38,24 +38,14 @@ nav li {
 }
 
 header {
-    width: 75%;
     margin: auto;
     text-align: center;
-    font-size: 80px;
-    color: white
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #83ff6a, 0 0 40px #83ff6a, 0 0 50px ##83ff6a, 0 0 60px #83ff6a, 0 0 70px #83ff6a;
-    }
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #06af14, 0 0 40px #06af14, 0 0 50px #06af14, 0 0 60px #06af14, 0 0 70px #06af14, 0 0 80px #06af14;
-    }
-  }
+header h1 {
+    font-size: 80px;
+    color: white
+}
 
 section {
     width: 75%;
@@ -64,7 +54,7 @@ section {
 }
 
 a {
-    color: greenyellow;
+    color: #0F0;
 }
 
 a:link { text-decoration: none; }
@@ -79,7 +69,6 @@ a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
 #header {
-    font-family: 'Courier New', Courier, monospace;
     height: 100vh;
 }
 
