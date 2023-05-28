@@ -1,10 +1,11 @@
-body { 
-    margin: 0 auto; 
+body {
+    margin: 0 auto;
     font-family: CustomFont, Arial, Helvetica, sans-serif;
     color: #0F0;
     background-color: black;
     margin-top: 40px;
     z-index: 1;
+
 }
 
 p {
@@ -20,9 +21,10 @@ h3 {
 
 nav {
     margin: auto;
-    background-color: black;
+    background: rgba(0, 0, 0, 0.774);
     text-align: center;
-    position: fixed; /* Set the navbar to fixed position */
+    position: fixed;
+    /* Set the navbar to fixed position */
     top: 0;
     left: 0;
     right: 0;
@@ -40,7 +42,7 @@ nav li {
 }
 
 #aboutpic {
-    float: right;    
+    float: right;
     margin: 0 0 0 15px;
     width: 18%;
     height: 18%;
@@ -63,20 +65,37 @@ section {
     width: 75%;
 }
 
+canvas {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+}
+
 a {
     color: #0F0;
 }
 
-a:link { text-decoration: none; }
+a:link {
+    text-decoration: none;
+}
 
 
-a:visited { text-decoration: none; }
+a:visited {
+    text-decoration: none;
+}
 
 
-a:hover { text-decoration: none; }
+a:hover {
+    text-decoration: none;
+    color: red;
+}
 
 
-a:active { text-decoration: none; }
+a:active {
+    text-decoration: none;
+}
 
 #header {
     height: 100vh;
@@ -86,18 +105,31 @@ a:active { text-decoration: none; }
     height: 100vh;
 }
 
+#about article {
+    background: rgba(0, 0, 0, 0.774);
+    padding: 20px;
+}
+
 #skills {
     height: 100vh;
     display: grid;
     grid-template-columns: auto auto auto;
     text-align: center;
+    background: rgba(0, 0, 0, 0.774);
+
 }
 
 #projects {
     height: 150vh;
+    
+}
+
+#cards {
+    background: rgba(0, 0, 0, 0.774);
     display: grid;
     gap: 10px;
     grid-template-columns: auto auto auto auto auto auto;
+    padding: 20px;
 }
 
 #projects h4 {
@@ -130,11 +162,31 @@ a:active { text-decoration: none; }
     border-radius: 5px;
 }
 
+#educertawards article {
+    background: rgba(0, 0, 0, 0.774);
+    padding: 20px;
+}
+
+#awards article {
+    background: rgba(0, 0, 0, 0.774);
+    padding: 20px;
+}
+
+#cert div {
+    background: rgba(0, 0, 0, 0.774);
+    padding: 20px;
+}
+
 #contact {
     height: 100vh;
 }
 
 #contact a {
+    padding: 20px;
+}
+
+#contact p {
+    background: rgba(0, 0, 0, 0.774);
     padding: 20px;
 }
 
@@ -145,39 +197,41 @@ a:active { text-decoration: none; }
 
 footer {
     margin: auto;
-    
+
     text-align: center;
     padding: 40px;
 }
 
 @keyframes enter-animation {
     0% {
-      transform: translateY(100px);
-      opacity: 0;
+        transform: translateY(100px);
+        opacity: 0;
     }
+
     100% {
-      transform: translateY(0);
-      opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
     }
-  }
+}
 
-  @media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) {
     .image-animation {
-      animation: enter-animation 0.8s 1;
+        animation: enter-animation 0.8s 1;
     }
-  }
+}
 
-  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
     width: 210px;
     height: 280px;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
     border-radius: 25px;
-  }
-  
-  /* This container is needed to position the front and back side */
-  .flip-card-inner {
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
     position: relative;
     width: 100%;
     height: 100%;
@@ -185,47 +239,49 @@ footer {
     transition: transform 0.8s;
     transform-style: preserve-3d;
     border-radius: 25px;
-  }
-  
-  /* Do an horizontal flip when you move the mouse over the flip box container */
-  .flip-card:hover .flip-card-inner {
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
     border-radius: 25px;
-  }
-  
-  /* Position the front and back side */
-  .flip-card-front, .flip-card-back {
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
+    /* Safari */
     backface-visibility: hidden;
     border-radius: 25px;
-  }
-  
-  /* Style the front side (fallback if image is missing) */
-  .flip-card-front {
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
     background-color: #bbb;
     color: black;
     border-radius: 25px;
-  }
-  
-  /* Style the back side */
-  .flip-card-back {
+}
+
+/* Style the back side */
+.flip-card-back {
     background-color: yellowgreen;
     color: white;
     transform: rotateY(180deg);
     border-radius: 25px;
-  }
+}
 
-  .flipbacktext {
+.flipbacktext {
     padding-top: 25px;
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: "CustomFont";
     src: url("/font/roboto-regular-webfont.woff") format("woff");
-    }
+}
 
 b {
     background-color: #0F0;
