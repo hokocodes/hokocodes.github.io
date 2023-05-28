@@ -52,11 +52,7 @@ nav li {
 header {
     margin: auto;
     text-align: center;
-}
-
-header h1 {
-    font-size: 140px;
-    color: white
+    height: 100vh;
 }
 
 section {
@@ -70,7 +66,7 @@ canvas {
     left: 0;
     top: 0;
     z-index: -1;
-
+    
 }
 
 a {
@@ -306,3 +302,12 @@ b {
     padding-left: 25px;
     padding-right: 25px;
 }
+
+.word {
+    margin: auto;
+    margin-top: 100px;
+    color: white;
+    font-size: 240px;
+  }
+
+  
