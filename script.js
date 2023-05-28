@@ -34,3 +34,4 @@ const draw = () => {
 };
 
 setInterval(draw, 30);
+
