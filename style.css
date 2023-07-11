@@ -124,9 +124,11 @@ a:active {
     background: rgba(0, 0, 0, 0.774);
     display: grid;
     gap: 10px;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: 210px 210px 210px 210px;
     padding: 20px;
     margin:auto;
+    gap: 10px 10px;
+    justify-content: center; 
 }
 
 #projects h4 {
@@ -225,6 +227,7 @@ footer {
     perspective: 1000px;
     /* Remove this if you don't want the 3D effect */
     border-radius: 25px;
+    margin:auto;
 }
 
 /* This container is needed to position the front and back side */
